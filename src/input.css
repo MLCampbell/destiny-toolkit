@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dave {
+    background-color: rgb(171, 248, 171);
+    height: 100vh;
+}
