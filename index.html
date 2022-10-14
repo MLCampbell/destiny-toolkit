@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,96 +8,123 @@
     <link href="/dist/output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;1,200&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;1,200&family=Open+Sans&display=swap"
+        rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./src/icons8-astronaut-16.png">
     <script type="text/javascript" src="./src/script.js" defer></script>
     <title>Destiny Toolkit - all your Destiny tools in one place!</title>
 </head>
-<body> 
+
+<body>
     <div class="wrapper">
-    <div class="container mx-auto bg-white mb-10">
-        <header>
-        <div class="grid grid-cols-1 justify-center space-y-4 my-10">
-            <div><h1 class="text-center">DESTINY TOOLKIT</h1></div>
-            <div><h2 class="text-center">All of your Destiny tools in one place</h2></div>
-        </header>
-    
-        <!-- Main container -->
-        <main>
-            <div class="flex justify-center lg:mt-4 mb-4 lg:mb-11">
-                <div class="grid grid-cols-1 justify-items-center">
-                    <button type="button" class="button-primary text-center font-primary">
-                        <a class="multilink" href="#">Core Tools</a>
-                    </button>
-                    <p class="font-primary text-center">Opens DIM, Braytech, and Light.gg at once!</p>
-                </div>                  
+        <div class="container mx-auto bg-white mb-10">
+            <header>
+                <div class="grid grid-cols-1 justify-center space-y-4 my-10">
+                    <div>
+                        <h1 class="text-center">DESTINY TOOLKIT</h1>
+                    </div>
+                    <div>
+                        <h2 class="text-center">All of your Destiny tools in one place</h2>
+                    </div>
+            </header>
+
+            <!-- Main container -->
+            <main>
+                <div class="flex justify-center lg:mt-4 mb-4 lg:mb-11">
+                    <div class="grid grid-cols-1 justify-items-center">
+                        <button type="button" class="button-primary text-center font-primary">
+                            <a class="multilink" href="#">Core Tools</a>
+                        </button>
+                        <p class="font-primary text-center">Opens DIM, Braytech, and Light.gg at once!</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-11 mt-10 lg:mt-20">
+                    <div class="grid grid-cols-1 justify-items-center">
+                        <button type="button" class="button">
+                            <a name="dim" href="https://app.destinyitemmanager.com/" target="_blank">Destiny Item
+                                Manager</a>
+                        </button>
+                        <label for="dim" class="font-sub-light">managing your Destiny inventory from DIM</label>
+                    </div>
+                    <div class="grid grid-cols-1 justify-items-center">
+                        <button type="button" class="button">
+                            <a name="light" href="https://www.light.gg/god-roll/roll-appraiser/" target="_blank">Check
+                                Rolls</a>
+                        </button>
+                        <label for="light" class="font-sub-light">item appraisal in light.gg</label>
+                    </div>
+                    <div class="grid grid-cols-1 justify-items-center">
+                        <button type="button" class="button">
+                            <a name="bray" href="https://bray.tech/weeklies" target="_blank">Weeklies</a>
+                        </button>
+                        <label for="bray" class="font-sub-light">weeklies and more from bray.tech</label>
+                    </div>
+                    <div class="grid grid-cols-1 justify-items-center">
+                        <button type="button" class="button">
+                            <a name="xur" href="https://whereisxur.com/" target="_blank">Xur?</a>
+                        </button>
+                        <label for="xur" class="font-sub-light">discover where Xur is today</label>
+                    </div>
+                    <div class="grid grid-cols-1 justify-items-center">
+                        <button type="button" class="button">
+                            <a name="armor" href="https://d2armorpicker.com/#/" target="_blank">Armor Picker</a>
+                        </button>
+                        <label for="armor" class="font-sub-light">min-max your armor!</label>
+                    </div>
+                    <div class="grid grid-cols-1 justify-items-center">
+                        <button type="button" class="button">
+                            <a name="ishtar" href="https://www.ishtar-collective.net/" target="_blank">Lore</a>
+                        </button>
+                        <label for="ishtar" class="font-sub-light">get your lore fix from Ishtar Collective</label>
+                    </div>
+                    <div class="grid grid-cols-1 justify-items-center">
+                        <button type="button" class="button">
+                            <a name="blueberries" href="https://www.blueberries.gg/" target="_blank">Blueberries.gg</a>
+                        </button>
+                        <label for="blueberries" class="font-sub-light">news and guides from the berries</label>
+                    </div>
+                    <div class="grid grid-cols-1 justify-items-center">
+                        <button type="button" class="button">
+                            <a name="reddit" href="https://www.reddit.com/r/DestinyTheGame/" target="_blank">Destiny
+                                Reddit</a>
+                        </button>
+                        <label for="reddit" class="font-sub-light">justify that Crucible death at
+                            r/DestinyTheGame</label>
+                    </div>
+                    <div class="grid grid-cols-1 justify-items-center">
+                        <button type="button" class="button">
+                            <a name="d2checklist" href="https://www.d2checklist.com/home" target="_blank">Destiny 2
+                                Checklist</a>
+                        </button>
+                        <label for="d2checklist" class="font-sub-light">a great checklist tool</label>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+
+        <!-- Trigger/Open The Modal -->
+        <button id="Btn">Open Modal</button>
+
+        <!-- The Modal -->
+        <div id="Modal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p class="text-center">Please enable popups to allow the Core Tools button to function</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-11 mt-10 lg:mt-20">
-                <div class="grid grid-cols-1 justify-items-center">
-                    <button type="button" class="button">
-                        <a name="dim" href="https://app.destinyitemmanager.com/" target="_blank">Destiny Item Manager</a>            
-                    </button>
-                    <label for="dim" class="font-sub-light">managing your Destiny inventory from DIM</label>
-                </div>
-                <div class="grid grid-cols-1 justify-items-center">
-                    <button type="button" class="button">
-                        <a name="light" href="https://www.light.gg/god-roll/roll-appraiser/" target="_blank">Check Rolls</a>            
-                    </button>
-                    <label for="light" class="font-sub-light">item appraisal in light.gg</label>
-                </div>
-                <div class="grid grid-cols-1 justify-items-center">
-                    <button type="button" class="button">
-                        <a name="bray" href="https://bray.tech/weeklies" target="_blank">Weeklies</a>            
-                    </button>
-                    <label for="bray" class="font-sub-light">weeklies and more from bray.tech</label>
-                </div>
-                <div class="grid grid-cols-1 justify-items-center">
-                    <button type="button" class="button">
-                        <a name="xur" href="https://whereisxur.com/" target="_blank">Xur?</a>            
-                    </button>
-                    <label for="xur" class="font-sub-light">discover where Xur is today</label>
-                </div>
-                <div class="grid grid-cols-1 justify-items-center">
-                    <button type="button" class="button">
-                        <a name="armor" href="https://d2armorpicker.com/#/" target="_blank">Armor Picker</a>            
-                    </button>
-                    <label for="armor" class="font-sub-light">min-max your armor!</label>
-                </div>
-                <div class="grid grid-cols-1 justify-items-center">
-                    <button type="button" class="button">
-                        <a name="ishtar" href="https://www.ishtar-collective.net/" target="_blank">Lore</a>            
-                    </button>
-                    <label for="ishtar" class="font-sub-light">get your lore fix from Ishtar Collective</label>
-                </div>
-                <div class="grid grid-cols-1 justify-items-center">
-                    <button type="button" class="button">
-                        <a name="blueberries" href="https://www.blueberries.gg/" target="_blank">Blueberries.gg</a>            
-                    </button>
-                    <label for="blueberries" class="font-sub-light">news and guides from the berries</label>
-                </div>
-                <div class="grid grid-cols-1 justify-items-center">
-                    <button type="button" class="button">
-                        <a name="reddit" href="https://www.reddit.com/r/DestinyTheGame/" target="_blank">Destiny Reddit</a>            
-                    </button>
-                    <label for="reddit" class="font-sub-light">justify that Crucible death at r/DestinyTheGame</label>
-                </div>
-                <div class="grid grid-cols-1 justify-items-center">
-                    <button type="button" class="button">
-                        <a name="d2checklist" href="https://www.d2checklist.com/home" target="_blank">Destiny 2 Checklist</a>            
-                    </button>
-                    <label for="d2checklist" class="font-sub-light">a great checklist tool</label>
-                </div>
-            </div>    
-        </main>
-        
-    </div> 
 
-    <footer>
-        <p class="footer-text">Site by GQ2 Web Dev</p>
-        <p class="footer-text"><a target="_blank" href="https://icons8.com/icon/33194/astronaut">Astronaut</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
-    </footer> 
+        </div>
 
-</div>
+        <footer>
+            <p class="footer-text">Site by GQ2 Web Dev</p>
+            <p class="footer-text"><a target="_blank" href="https://icons8.com/icon/33194/astronaut">Astronaut</a> icon
+                by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+        </footer>
+
+    </div>
 
 </body>
+
 </html>
