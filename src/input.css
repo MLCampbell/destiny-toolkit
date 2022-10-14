@@ -2,7 +2,120 @@
 @tailwind components;
 @tailwind utilities;
 
-.dave {
-    background-color: rgb(171, 248, 171);
-    height: 100vh;
+/* npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch */
+
+:root{
+  --primarybg: #17471fe5;
+  --secondarybg: rgba(1, 41, 1, 0.534);
+  --primaryfont: #FFFFFF;
+  --secondaryfont: rgb(250, 250, 250);
+  --hoverbg: #41b929ee;
+}
+
+html {
+  height: 100%;
+  background-color: transparent;
+  font-family: 'Jost', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.debug {
+  width: fit-content;
+  border: 2px solid red;
+}
+
+/* div {
+  border: 1px dotted pink;
+} */
+
+.font-primary {
+  color: var(--primaryfont);
+  font-family: 'Jost'
+}
+
+.font-sub-light {
+  color: var(--secondaryfont);
+}
+
+.container {
+  background-color: transparent;
+}
+
+.wrapper {
+  min-height:100vh;
+  margin: 0;
+  overflow: hidden;
+  background:linear-gradient(0deg, rgba(3, 3, 3, 0.103), rgba(38, 71, 23, 0.247)), url("../src/background-img.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+
+h1 {
+  font-size: 4rem;
+  color: var(--primaryfont);
+  font-family: 'Jost', sans-serif;
+  letter-spacing: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: var(--primaryfont);
+  font-style: italic;
+  font-weight: light;
+  font-family: 'Jost';
+}
+
+.button {
+  padding: 1rem 3rem;
+  color: var(--primaryfont);
+  background-image: linear-gradient(45deg, var(--primarybg), var(--secondarybg));
+  border: 1px solid transparent;
+  border-radius: 20px 0 20px 0;
+  font-family: 'Jost';
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.button-primary {
+  padding: 1rem 3rem;
+  color: var(--primaryfont);
+  background-image: linear-gradient(270deg, rgba(175, 131, 50, 0.705), rgb(202, 142, 30));
+  border: -1px solid transparent;
+  border-radius: 20px 0 20px 0;
+  font-family: 'Jost';
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.button-primary:hover {
+  background-image: none;
+  background-color: rgb(223, 162, 31);
+  font-weight: 400;
+}
+
+.button:hover {
+  background-image: none;
+  background-color: var(--hoverbg);
+}
+
+label {
+  margin-top: 8px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 3px;
+  font-weight: 100;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+footer {
+  position: fixed;
+  bottom: 2;
+  padding-left: 10px;
+}
+
+.footer-text {
+  font-size: 10px;
+  color: rgb(196, 196, 196);
 }
