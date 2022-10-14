@@ -3,21 +3,12 @@ const multiBtn = document.querySelector('.multilink')
 var modal = document.getElementById("Modal");
 
 function PopupBlocked() {
-    const PUtest = window.open(null)
+    const firstWindow = window.open(null);
+    firstWindow.close();
+    const PUtest = window.open(null);
     try { PUtest.close(); return false; }
     catch (e) { return true }
 };
-
-let check = true;
-
-function checkPopUpBlock() {
-    if (PopupBlocked()) {
-        check = false;
-        return true;
-    } else {
-        modal.style.display = "block";
-    }
-}
 
 function launchPages() {
     window.open('https://app.destinyitemmanager.com/');
@@ -28,8 +19,10 @@ function launchPages() {
 
 function clickHandler(e) {
     e.preventDefault();
-    if (check === true) { checkPopUpBlock(); }
-    launchPages()
+    if (!PopupBlocked()) {
+        launchPages()
+    }
+    else { modal.style.display = "block" }
 };
 
 multiBtn.addEventListener("click", clickHandler)
